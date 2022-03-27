@@ -1,0 +1,153 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #000;
+}
+
+
+.menu-principal{
+    background-color: rgb(49, 49, 49);
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    position:fixed;
+    width: 100%;
+    height: 75px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+main{
+    margin: 0 auto;
+    width: 100%;
+    position: fixid;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.logo{
+    position: absolute;
+    top: 23px;
+    left: 30px;
+    float: left;
+}
+.menu ul li {
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    margin: 10px 20px 0 0;
+    font-size: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.menu ul li a:hover{
+    color: green;
+    border-bottom: 3px solid green;
+}
+.menu{
+    width: 40%;
+    float: right;
+}
+.inicio{
+    width: 800px;
+    margin: 180px auto;
+}
+.inicio h1{
+    color: white;
+    width: 59%;
+    float: right;
+    font-size: 40px;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+.inicio p{
+    color: white;
+    font-size: 30px;
+}
+.inicio img{
+    width: 40%;
+    float: left;
+    border: 0.5px solid green;
+}
+.clear{
+    clear: both;
+}
+.borda ul li{
+    border: 2px solid black;
+}
+.layout ul li {
+    display: inline-block;
+    background-color: rgb(29, 29, 29);
+    margin-left: 20px;
+    padding: 5px 5px 20px 5px;
+    border: 2px solid green;
+    color: white;
+}
+.layout{
+    width: 1100px;
+    margin: 10px auto;
+}
+.back{
+    margin: 100px 0 50px 4px;
+    background-color: rgb(14, 14, 14);
+    width: 99%;
+    padding: 10px 0 1px 6px;
+    border: 1px solid green;
+}
+.layout h1{
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.layout ul li a{
+    color: white;
+    text-decoration: none;
+}
+.layout ul li a:hover{
+    color: green;
+    border-bottom: 3px solid green;
+}
+.fundo{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(29, 29, 29);
+    position: relative;
+}
+.rodape{
+    width: 800px;
+    margin: 0 auto;
+}
+.rodape h2{
+    color: white;
+}
+
+.rodape p{
+    color: white;
+}
+.sobre{
+    width: 50%;;
+    float: left;
+    display: inline;
+}
+.contact{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30%;
+    float: right;
+    display: inline;
+}
+.fonte ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.fonte ul li a:hover{
+    color: #ccc;
+    border-bottom: 2px solid #ccc;
+}

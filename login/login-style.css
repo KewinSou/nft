@@ -1,0 +1,68 @@
+body{
+    background-color: #000;
+    margin: 0;
+
+}
+.menu-principal{
+    background-color: rgb(49, 49, 49);
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    position:fixed;
+    width: 100%;
+    height: 75px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+main{
+    margin: 0 auto;
+    width: 100%;
+    position: fixid;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.logo{
+    position: absolute;
+    top: 23px;
+    left: 30px;
+    float: left;
+}
+.menu ul li {
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    margin: 10px 20px 0 0;
+    font-size: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.menu ul li a:hover{
+    color: rgb(184, 183, 183);
+    border-bottom: 3px solid rgb(184, 183, 183);
+}
+.menu{
+    width: 30%;
+    float: right;
+}
+.centro{
+    width: 200px;
+    margin: 0 auto;
+}
+fieldset{
+    background-color: #ccc;
+    display: inline;
+    margin-top: 100px;
+    border: 25px solid #ccc;
+}
+#login a{
+    padding: 5px;
+    background-color: rgb(29, 180, 29);
+    display: inline;
+    color: black;
+    text-decoration: none;
+}
