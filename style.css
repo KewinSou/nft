@@ -4,22 +4,17 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
-::-webkit-scrollbar {
-  width: 0; // Remove scrollbar space
-}
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: white;
   font-family: "Mont Serrat", sans-serif;
 }
 
 /* Header Section */
 .navbar {
-  background-color: rgb(49, 49, 49);
-  border-top: 2px solid green;
-  border-bottom: 2px solid green;
+  background-color: black;
   position: fixed;
   height: 75px;
   width: 100%;
@@ -43,6 +38,11 @@ body {
   color: green;
 }
 
+.menu {
+  width: 30%;
+  float: right;
+}
+
 .menu ul li {
   display: inline-block;
   margin-left: 2em;
@@ -59,11 +59,6 @@ body {
   border-bottom: 3px solid green;
 }
 
-.menu {
-  width: 40%;
-  float: right;
-}
-
 /* Hero Section */
 .inicio {
   width: 50em;
@@ -73,7 +68,7 @@ body {
 }
 
 .hero-h1 {
-  color: #fff;
+  color: #000;
   width: 90%;
   font-size: 40px;
   margin-bottom: 0;
@@ -84,7 +79,7 @@ body {
 }
 
 .hero-p {
-  color: #fff;
+  color: #000;
   font-size: 30px;
 }
 
@@ -110,6 +105,7 @@ body {
   font-size: 1.1em;
   cursor: pointer;
   border-radius: 4px;
+  border: 1px solid black;
 }
 
 .hero-btn:after {
@@ -129,19 +125,19 @@ body {
 }
 
 .hero-img {
+  background-color: rgba(0, 0, 0, 0.3);
   width: 80%;
-  border: 1px solid green;
+  border: 3px solid black;
   border-radius: 10px;
 }
 
 /* News/Collections Section */
 .back {
-  margin: 100px 0 100px 0;
-  background-color: rgb(14, 14, 14);
-  width: 99.3%;
+  margin: 100px auto 100px auto;
+  background-color: white;
+  width: 95%;
   padding: 10px 0 1px 6px;
-  border-top: 1px solid green;
-  border-bottom: 1px solid green;
+  border: 1px solid black;
 }
 
 .layout {
@@ -151,22 +147,24 @@ body {
 
 .layout h1 {
   font-size: 50px;
-  color: #fff;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.layout ul li {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-left: 20px;
+  padding: 2px 2px 0 2px;
+  border: 2px solid black;
+  border-radius: 4px;
+  color: black;
 }
 
 .layout ul li:hover {
   transform: scale(1.075);
   transition: 0.3s ease-in;
-}
-
-.layout ul li {
-  display: inline-block;
-  background-color: rgb(29, 29, 29);
-  margin-left: 20px;
-  padding: 2px 2px 0 2px;
-  border: 2px solid green;
-  border-radius: 4px;
-  color: #fff;
 }
 
 .layout img {
@@ -180,7 +178,7 @@ body {
 }
 
 .layout ul li a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -192,26 +190,30 @@ body {
 .fundo {
   width: 100%;
   height: 400px;
-  background-color: rgb(29, 29, 29);
+  background-color: rgba(0, 0, 0, 0.3);
   position: relative;
 }
-.rodape {
+
+.rodape{
   width: 800px;
   margin: 0 auto;
 }
-.rodape h2 {
-  color: #fff;
+
+.rodape h2{
+  color: black;
 }
 
-.rodape p {
-  color: #fff;
+.rodape p{
+  color: black;
 }
-.sobre {
-  width: 50%;
+
+.sobre{
+  width: 50%;;
   float: left;
   display: inline;
 }
-.contact {
+
+.contact{
   position: absolute;
   top: 10px;
   right: 0;
@@ -219,11 +221,13 @@ body {
   float: right;
   display: inline;
 }
-.fonte ul li a {
+
+.fonte ul li a{
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
-.fonte ul li a:hover {
-  color: #ccc;
-  border-bottom: 2px solid #ccc;
+
+.fonte ul li a:hover{
+  color: rgb(48, 48, 48);
+  border-bottom: 2px solid rgb(10, 10, 10);
 }

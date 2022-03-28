@@ -1,111 +1,147 @@
-body{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-.menu-principal{
-    background-color: rgb(49, 49, 49);
-    border-top: 2px solid green;
-    border-bottom: 2px solid green;
-    position:fixed;
-    width: 100%;
-    height: 75px;
-    left: 0;
-    right: 0;
-    top: 0;
-}
-main{
-    margin: 0 auto;
-    width: 100%;
-    position: fixid;
-    left: 0;
-    right: 0;
-    top: 0;
-}
-.logo{
-    position: absolute;
-    top: 23px;
-    left: 30px;
-    float: left;
-}
-.menu ul li {
-    display: inline-block;
-    position: relative;
-    padding-left: 10px;
-    margin: 10px 20px 0 0;
-    font-size: 15px;
-}
-.menu ul li a{
-    text-decoration: none;
-    color: #fff;
-    
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&display=swap");
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
-.menu ul li a:hover{
-    color: green;
-    border-bottom: 3px solid green;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Mont Serrat", sans-serif;
 }
-.menu{
-    width: 30%;
-    float: right;
+
+/*Header section*/
+.navbar {
+    background-color: black;
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em;
+    z-index: 999;
 }
-.layout ul li {
-    display: inline-block;
-    background-color: rgb(29, 29, 29);
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding: 5px 5px 20px 5px;
-    border: 2px solid green;
-    color: white;
+
+.logo a {
+    margin-left: 2em;
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
 }
-.layout{
+
+.logo a span {
+color: green;
+}
+
+.menu {
+width: 28%;
+float: right;
+}
+
+.menu ul li {
+display: inline-block;
+margin-left: 2em;
+font-size: 0.9em;
+}
+
+.menu ul li a {
+text-decoration: none;
+color: #fff;
+}
+
+.menu ul li a:hover {
+color: green;
+border-bottom: 3px solid green;
+}
+
+/*Collections*/
+.back {
+    margin: 100px 0 50px 4px;
+    background-color: white;
+    width: 90%;
+    padding: 10px 0 1px 6px;
+    border: 2px solid black;
+    margin: 100px auto;
+}
+
+.layout {
     width: 1100px;
     margin: 10px auto;
 }
-.back{
-    margin: 100px 0 50px 4px;
-    background-color: rgb(14, 14, 14);
-    width: 99%;
-    padding: 10px 0 1px 6px;
-    border: 1px solid green;
-}
-.layout h1{
+
+.layout h1 {
     font-size: 50px;
-    color: white;
+    color: black;
     margin: 0;
     padding: 0;
 }
-.layout ul li a{
-    color: white;
+
+.layout ul li {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 2px 2px 0 2px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.layout ul li:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+}
+
+.layout img {
+    object-fit: cover;
+}
+
+.layout p {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 5px;
+    color: black;
+}
+
+.layout ul li a {
+    color: black;
     text-decoration: none;
 }
-.layout ul li a:hover{
+
+.layout ul li a:hover {
     color: green;
-    border-bottom: 3px solid green;
 }
-.fundo{
+
+/*Footer section*/
+.fundo {
     width: 100%;
     height: 400px;
-    background-color: rgb(29, 29, 29);
+    background-color: rgba(0, 0, 0, 0.3);
     position: relative;
 }
+
 .rodape{
     width: 800px;
     margin: 0 auto;
 }
+
 .rodape h2{
-    color: white;
+    color: black;
 }
 
 .rodape p{
-    color: white;
+    color: black;
 }
+
 .sobre{
     width: 50%;;
     float: left;
     display: inline;
 }
+
 .contact{
     position: absolute;
     top: 10px;
@@ -114,11 +150,13 @@ main{
     float: right;
     display: inline;
 }
+
 .fonte ul li a{
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
+
 .fonte ul li a:hover{
-    color: #ccc;
-    border-bottom: 2px solid #ccc;
+    color: rgb(48, 48, 48);
+    border-bottom: 2px solid rgb(10, 10, 10);
 }
