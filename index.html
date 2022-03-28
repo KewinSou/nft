@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt'br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,45 +9,64 @@
     <link rel="shortcut icon" href="imagem/icone.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <main>
-            <div class="menu-principal">
-                <div class="logo">
-                    <img src="imagem/logo.png" alt="logo">
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="collections/collectons.html">COLLECTION</a></li>
-                        <li><a href="#footer">CONTACT</a></li>
-                        <li><a href="#footer">ABOUT US
-                        </a></li>
-                        <li><a href="pages/login.html">LOGIN</a></li>
-                    </ul>
-                </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><span>J</span>TPAG<span>E</span></a>
             </div>
-        </main>
-    </header>
-    <section> 
-        <div class="inicio">
-            <img src="imagem/ntf-inicio1.gif" alt="gif">
-            <h1>CONHECA O MUNDO DAS NFTs!</h1>
-            <p>As melhores NFTs do mercado voce encontra aqui.</p>
-            <div class="clear"></div>
-        </div>
-    </section>
-    <section>
-       <div class="back">
-           <div class="layout">
-                <h1>News</h1>
+            <div class="menu">
                 <ul>
-                    <li><a target="_blank" rel="_self" href="collections.html"><img src="imagem/novidade1.png" alt=""></a><p><a href="#">Macaco-Anjo</a><br>£--,--</p></li>
-                    <li><a target="_blank" rel="_self" href="collections.html"><img src="imagem/novide2.png" alt=""></a><p><a target="_blank" rel="_self" href="collections.html">Macaco-Charuto</a><br>£--,--</p></li>
-                    <li><a target="_blank" rel="_self" href="collections.html"><img src="imagem/novidade3.png" alt=""></a><p><a href="#">Macaco-Chapeu</a><br>£--,--</p></li>
+                    <li><a href="./collections/collectons.html">COLLECTION</a></li>
+                    <li><a href="#footer">CONTACT</a></li>
+                    <li><a href="#footer">ABOUT US</a></li>
+                    <li><a href="./login/login.html">LOGIN</a></li>
                 </ul>
             </div>
-       </div>
-       <div class="clear"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero"> 
+        <article class="inicio">
+            <img class="hero-img" src="imagem/ntf-inicio1.gif" alt="gif">
+            <article class="hero-heading">
+                <h1 class="hero-h1">CONHECA O MUNDO DAS <span>NFTs</span>!</h1>
+                <p class="hero-p">As melhores NFTs do mercado voce encontra aqui.</p>
+                <button class="hero-btn">
+                    <a href="./collections/collectons.html">
+                        Explorar
+                    </a>
+                </button>
+            </article>
+        </article>
     </section>
+
+    <!-- News Section -->
+    <section>
+        <div class="back">
+            <div class="layout">
+                <h1>News</h1>
+                    <ul>
+                        <li>
+                            <a target="_blank" rel="_self" href="collections.html"><img src="imagem/novidade1.png" alt=""></a>
+                            <p><a href="#">Macaco-Anjo</a>£--,--</p>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="_self" href="collections.html"><img src="imagem/novide2.png" alt=""></a>
+                            <p><a target="_blank" rel="_self" href="collections.html">Macaco-Charuto</a>£--,--</p>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="_self" href="collections.html"><img src="imagem/novidade3.png" alt=""></a>
+                            <p><a href="#">Macaco-Chapeu</a>£--,--</p>
+                        </li>
+                    </ul>
+            </div>
+        </div> 
+    <div class="clear"></div>
+    </section>
+
+    <!-- Collection Section -->
     <section>
         <div class="back">
             <div class="layout">
@@ -60,9 +79,11 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer Section -->
     <footer id="footer">
-       <div class="fundo">
-           <div class="rodape">
+        <div class="fundo">
+            <div class="rodape">
                 <div class="sobre">
                     <br>
                     <h2>About us</h2>
@@ -79,8 +100,8 @@
                         </ul>
                     </div>
                 </div>
-           </div>
-       </div>
+            </div>
+    </div>
     </footer>
 </body>
 </html>
