@@ -1,153 +1,229 @@
-body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: #000;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&display=swap");
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; // Remove scrollbar space
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: "Mont Serrat", sans-serif;
+}
 
-.menu-principal{
-    background-color: rgb(49, 49, 49);
-    border-top: 2px solid green;
-    border-bottom: 2px solid green;
-    position:fixed;
-    width: 100%;
-    height: 75px;
-    left: 0;
-    right: 0;
-    top: 0;
+/* Header Section */
+.navbar {
+  background-color: rgb(49, 49, 49);
+  border-top: 2px solid green;
+  border-bottom: 2px solid green;
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2em;
+  z-index: 999;
 }
-main{
-    margin: 0 auto;
-    width: 100%;
-    position: fixid;
-    left: 0;
-    right: 0;
-    top: 0;
+
+.logo a {
+  margin-left: 2em;
+  font-size: 2em;
+  text-decoration: none;
+  color: #fff;
 }
-.logo{
-    position: absolute;
-    top: 23px;
-    left: 30px;
-    float: left;
+
+.logo a span {
+  color: green;
 }
+
 .menu ul li {
-    display: inline-block;
-    position: relative;
-    padding-left: 10px;
-    margin: 10px 20px 0 0;
-    font-size: 15px;
-}
-.menu ul li a{
-    text-decoration: none;
-    color: #fff;
-    
+  display: inline-block;
+  margin-left: 2em;
+  font-size: 0.9em;
 }
 
-.menu ul li a:hover{
-    color: green;
-    border-bottom: 3px solid green;
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
 }
-.menu{
-    width: 40%;
-    float: right;
+
+.menu ul li a:hover {
+  color: green;
+  border-bottom: 3px solid green;
 }
-.inicio{
-    width: 800px;
-    margin: 180px auto;
+
+.menu {
+  width: 40%;
+  float: right;
 }
-.inicio h1{
-    color: white;
-    width: 59%;
-    float: right;
-    font-size: 40px;
-    display: inline;
-    padding: 0;
-    margin: 0;
+
+/* Hero Section */
+.inicio {
+  width: 50em;
+  margin: 180px auto;
+  display: flex;
+  flex-direction: row;
 }
-.inicio p{
-    color: white;
-    font-size: 30px;
+
+.hero-h1 {
+  color: #fff;
+  width: 90%;
+  font-size: 40px;
+  margin-bottom: 0;
 }
-.inicio img{
-    width: 40%;
-    float: left;
-    border: 0.5px solid green;
+
+.hero-h1 span {
+  color: green;
 }
-.clear{
-    clear: both;
+
+.hero-p {
+  color: #fff;
+  font-size: 30px;
 }
-.borda ul li{
-    border: 2px solid black;
+
+.hero-heading {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
 }
+
+.hero-btn a {
+  position: relative;
+  z-index: 2;
+  color: #000;
+  text-decoration: none;
+}
+
+.hero-btn {
+  position: relative;
+  padding: 0.8em;
+  background-color: #fff;
+  border: none;
+  width: 25%;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: green;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+
+.hero-btn:hover:after {
+  width: 100%;
+}
+
+.hero-img {
+  width: 80%;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+
+/* News/Collections Section */
+.back {
+  margin: 100px 0 100px 0;
+  background-color: rgb(14, 14, 14);
+  width: 99.3%;
+  padding: 10px 0 1px 6px;
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
+}
+
+.layout {
+  width: 1100px;
+  margin: 20px auto;
+}
+
+.layout h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.layout ul li:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+}
+
 .layout ul li {
-    display: inline-block;
-    background-color: rgb(29, 29, 29);
-    margin-left: 20px;
-    padding: 5px 5px 20px 5px;
-    border: 2px solid green;
-    color: white;
-}
-.layout{
-    width: 1100px;
-    margin: 10px auto;
-}
-.back{
-    margin: 100px 0 50px 4px;
-    background-color: rgb(14, 14, 14);
-    width: 99%;
-    padding: 10px 0 1px 6px;
-    border: 1px solid green;
-}
-.layout h1{
-    font-size: 50px;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-.layout ul li a{
-    color: white;
-    text-decoration: none;
-}
-.layout ul li a:hover{
-    color: green;
-    border-bottom: 3px solid green;
-}
-.fundo{
-    width: 100%;
-    height: 400px;
-    background-color: rgb(29, 29, 29);
-    position: relative;
-}
-.rodape{
-    width: 800px;
-    margin: 0 auto;
-}
-.rodape h2{
-    color: white;
+  display: inline-block;
+  background-color: rgb(29, 29, 29);
+  margin-left: 20px;
+  padding: 2px 2px 0 2px;
+  border: 2px solid green;
+  border-radius: 4px;
+  color: #fff;
 }
 
-.rodape p{
-    color: white;
+.layout img {
+  object-fit: cover;
 }
-.sobre{
-    width: 50%;;
-    float: left;
-    display: inline;
+
+.layout p {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0 5px;
 }
-.contact{
-    position: absolute;
-    top: 10px;
-    right: 0;
-    width: 30%;
-    float: right;
-    display: inline;
+
+.layout ul li a {
+  color: #fff;
+  text-decoration: none;
 }
-.fonte ul li a{
-    text-decoration: none;
-    color: #fff;
+
+.layout ul li a:hover {
+  color: green;
 }
-.fonte ul li a:hover{
-    color: #ccc;
-    border-bottom: 2px solid #ccc;
+
+/* Footer Section */
+.fundo {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(29, 29, 29);
+  position: relative;
+}
+.rodape {
+  width: 800px;
+  margin: 0 auto;
+}
+.rodape h2 {
+  color: #fff;
+}
+
+.rodape p {
+  color: #fff;
+}
+.sobre {
+  width: 50%;
+  float: left;
+  display: inline;
+}
+.contact {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 30%;
+  float: right;
+  display: inline;
+}
+.fonte ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.fonte ul li a:hover {
+  color: #ccc;
+  border-bottom: 2px solid #ccc;
 }
