@@ -38,25 +38,59 @@ color: green;
 }
 
 .menu {
-width: 28%;
-float: right;
-}
-
-.menu ul li {
-display: inline-block;
-margin-left: 2em;
-font-size: 0.9em;
-}
-
-.menu ul li a {
-text-decoration: none;
-color: #fff;
-}
-
-.menu ul li a:hover {
-color: green;
-border-bottom: 3px solid green;
-}
+    width: 26%;
+    float: right;
+  }
+  
+  .menu ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    display: inline;
+    position: relative;
+    font-size: 0.9em;
+  }
+  
+  .menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background .3s;
+  }
+  
+  .menu ul li a:hover{
+    background-color: rgba(199, 199, 199, 0.3);
+    color: #ccc;
+  }
+  
+  /*menu down*/
+  .menu ul ul{
+    display: none;
+    position: absolute;
+  }
+  
+  .menu ul li:hover ul{
+    background-color: black;
+    position: absolute;
+    display: block;
+    left:0;
+  }
+  
+  .menu ul ul{
+    width: 100px;
+  }
+  
+  .menu ul ul li{
+    display: inline;
+  }
+  
+  .menu ul ul li a{
+    display: block;
+  }
+  /*menu down*/
 
 /*Collections*/
 .back {
