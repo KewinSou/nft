@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&display=swap");
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Mont Serrat", sans-serif;
+}
+
+/* Header Section */
+.navbar {
+  background-color: black;
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2em;
+  z-index: 999;
+}
+
+.logo a {
+  margin-left: 2em;
+  font-size: 2em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo a span {
+  color: green;
+}
+
+.menu {
+  width: 26%;
+  float: right;
+}
+
+.menu ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  position: relative;
+  font-size: 0.9em;
+}
+
+.menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: background .3s;
+}
+
+.menu ul li a:hover{
+  background-color: rgba(199, 199, 199, 0.3);
+  color: #ccc;
+}
+
+/*menu down*/
+.menu ul ul{
+  display: none;
+  position: absolute;
+}
+
+.menu ul li:hover ul{
+  background-color: black;
+  position: absolute;
+  display: block;
+  left:0;
+}
+
+.menu ul ul{
+  width: 100px;
+}
+
+.menu ul ul li{
+  display: inline;
+}
+
+.menu ul ul li a{
+  display: block;
+}
+/*menu down*/
+
+/*conteudo*/
+.conteiner{
+    width: 100%;
+    margin-top: 120px;
+    height: 40em;
+}
+
+.conteudo h1 {
+    font-size: 50px;
+    color: black;
+    width: 60%;
+    float: left;
+    margin-left: 50px;
+}
+
+.conteudo p {
+    font-size: 25px;
+    color: black;
+    width: 60%;
+    float: left;
+    margin-left: 50px;
+}
+
+.img-layout{
+    width: 35%;
+    float: right;
+    text-align: center;
+    padding: 35px 0;
+}
+
+/*Artistas*/
+.artistas{
+    width: 95%;
+    height: 45em;
+    background-color: rgba(0, 233, 0, 0.13);
+    margin: 0 auto;
+}
+
+.artistas h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.img-artistas{
+    padding: 0 7em;
+}
+.img-artistas p {
+    display: inline-block;
+    padding: 30px;
+    margin: 9px 4em;
+    text-align: center;
+}
+
+/*Quem somos*/
+.ajuste h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.ajuste{
+    height: 47em;
+}
+
+.right p{
+    float: right;
+}
+
+.empresa{
+    float: left;
+    padding: 5em 0;
+}
+
+/*Juntar se a nos*/
+.caixa{
+    background-color: rgba(0, 233, 0, 0.13);
+    width: 80%;
+    height: 14em;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    position: relative;
+}
+
+.conteudo2 h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+.conteudo2 p{
+    text-align: center;
+    float: none;
+}
+
+.conteudo2 a{
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 11em;
+    left: 29em;
+}
+
+/*Footer*/
+.fundo {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .rodape{
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .rodape h2{
+    color: black;
+  }
+  
+  .rodape p{
+    color: black;
+  }
+  
+  .sobre{
+    width: 50%;;
+    float: left;
+    display: inline;
+  }
+  
+  .contact{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30%;
+    float: right;
+    display: inline;
+  }
+  
+  .fonte ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .fonte ul li a:hover{
+    color: rgb(48, 48, 48);
+    border-bottom: 2px solid rgb(10, 10, 10);
+  }
