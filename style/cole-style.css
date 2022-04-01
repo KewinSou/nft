@@ -150,47 +150,50 @@ color: green;
 }
 
 /*Footer section*/
-.fundo {
-    width: 100%;
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.3);
-    position: relative;
+.fundo{
+  background-color: #ccc;
+  width: 100%;
+  height: 280px;
+  position: relative;
 }
 
 .rodape{
-    width: 800px;
-    margin: 0 auto;
+  display: inline-grid;
+  margin: 0 70px;
 }
 
-.rodape h2{
-    color: black;
+.bold{
+  font-size: 25px;
 }
 
-.rodape p{
-    color: black;
+#font{
+  font-size: 35px;
+  display: inline-block;
 }
 
-.sobre{
-    width: 50%;;
-    float: left;
-    display: inline;
+#font span{
+  color: green;
 }
 
-.contact{
-    position: absolute;
-    top: 10px;
-    right: 0;
-    width: 30%;
-    float: right;
-    display: inline;
+.rodape a{
+  color: black;
+  text-decoration: none;
+  padding: 2px;
+  margin-top: 20px;
+  list-style-type: none;
 }
 
-.fonte ul li a{
-    text-decoration: none;
-    color: black;
+.rodape a:hover{
+  color: green;
+  border-bottom:2px solid green ;
 }
 
-.fonte ul li a:hover{
-    color: rgb(48, 48, 48);
-    border-bottom: 2px solid rgb(10, 10, 10);
+.rodape ul{
+  padding: 0;
+  margin: 0;
+}
+
+.rodape ul li{
+  list-style-type: none;
+  padding: 5px;
 }
