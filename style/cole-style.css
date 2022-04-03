@@ -35,63 +35,68 @@ a, ul, li{
 #ico{
   font-size: 30px;
   text-decoration: none;
+  font-weight: normal;
   color: white;
-  padding-left: 25px;
+  padding-left: 2em;
 }
 
 #ico span {
   color: green;
 }
-  
+
+.menu {
+  padding-right: 2em;
+}
+
 .menu ul{
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
-  
+
 .menu ul li {
-    display: inline;
-    position: relative;
-    font-size: 0.9em;
+  display: inline;
+  position: relative;
+  font-size: 0.9em;
 }
-  
+
 .menu ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    transition: background .3s;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: background .3s;
 }
-  
+
 .menu ul li a:hover{
-    background-color: rgba(199, 199, 199, 0.3);
-    color: #ccc;
+  background-color: rgba(199, 199, 199, 0.3);
+  color: #ccc;
 }
-  
-  /*menu down*/
-  .menu ul ul{
-    display: none;
-    position: absolute;
-  }
-  
-  .menu ul li:hover ul{
-    background-color: black;
-    position: absolute;
-    display: block;
-    left:0;
-  }
-  
-  .menu ul ul{
-    width: 100px;
-  }
-  
-  .menu ul ul li{
-    display: inline;
-  }
-  
-  .menu ul ul li a{
-    display: block;
-  }
-  /*menu down*/
+
+/*menu down*/
+.menu ul ul{
+  display: none;
+  position: absolute;
+}
+
+.menu ul li:hover ul{
+  background-color: black;
+  position: absolute;
+  display: block;
+  left:0;
+}
+
+.menu ul ul{
+  width: 100px;
+}
+
+.menu ul ul li{
+  display: inline;
+}
+
+.menu ul ul li a{
+  display: block;
+}
+/*menu down*/
 
 /*Collections*/
 .back {

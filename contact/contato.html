@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Contato</title>
+		<meta name="description" content="As melhores NFTs do mercado você encontra aqui.">
+		<meta property="og:type" content="website">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="contato.css">
+    <link rel="shortcut icon" href="/imagem/icone.ico" type="image/x-icon">
+	</head>
+
+	<body>
+    <main>
+      <header>
+        <div class="navbar">
+            <a id="ico" href="#">
+                <span>J</span>TPAG<span>E</span>
+            </a>
+            <div class="menu">
+                <ul>
+                    <li id="menu-colecoes">
+                        <a href="#">Coleções</a>
+                        <ul>
+                            <li><a href="../collectons.html#monkeys">Monkeys</a>
+                            <li><a href="../collectons.html#invisible">Invisible</a>
+                            <li><a href="../collectons.html#punks">Punks</a>
+                            <li><a href="../collectons.html">Ver todas</a>
+                        </ul>
+                    <li>
+                        <a href="../contact/contato.html">Contato</a>
+                    <li>
+                        <a href="../sobre.html">Sobre</a>
+                        <ul>
+                            <li><a href="../sobre.html#nfts">NFTs</a>
+                            <li><a href="../sobre.html#artistas">Artistas</a>
+                            <li><a href="../sobre.html#empresa">Empresa</a>
+                            <li><a href="../sobre.html#juntar-se">Juntar-se</a>
+                        </ul>
+                    <li>
+                        <a href="../pages/login.html">Entrar</a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+		<section class="contato container fadeInDown" data-anime="1200">
+			<form id="form_orcamento" class="contato_form">
+				<label for="nome">Nome</label>
+				<input type="text" id="nome" name="nome">
+				<label for="email">E-mail</label>
+				<input type="email" id="email" name="email">
+				<label for="telefone">Telefone</label>
+				<input type="text" id="telefone" name="telefone">
+
+				<label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+				<input type="text" class="nao-aparece" name="leaveblank">
+				<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+				<input type="text" class="nao-aparece" name="dontchange" value="http://">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea id="mensagem" name="mensagem"></textarea>
+        
+        <button id="enviar" name="enviar" class="hero-btn">Enviar</a>
+        </button>
+			</form>
+      <p class="mensagem-enviar"></p>
+		</section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer id="footer">
+    <section class="fundo">
+        <div class="rodape">
+            <a id="font" href="#"><strong><span>J</span>TPEG<span>E</span></strong></a>
+            <p>Lorem ipsum, dolor sit amet <br> consectetur adipisicing elit. <br> Cumque natus error laborum adipisci <br> reiciendis aperiam nostrum. Ducimus id <br> laboriosam quis, unde consectetur, <br> modi sed  dolorum vero ab voluptatem <br> debitis numquam.</p>
+        </div>
+        <div class="rodape">
+            <a class="bold" href="#"><strong>Coleções</strong></a>
+            <ul>
+                <li><a href="./collectons.html#monkeys">Monkeys</a>
+                <li><a href="./collectons.html#invisible">Invisible</a>
+                <li><a href="./collectons.html#punks">Punks</a>
+                <li><a href="./collectons.html">Ver todas</a>
+            </ul>
+        </div >
+        <div class="rodape">
+            <a class="bold" href="#"><strong>Sobre</strong></a>
+            <ul>
+                <li><a href="./sobre.html#nfts">NFTs</a>
+                <li><a href="./sobre.html#artistas">Artistas</a>
+                <li><a href="./sobre.html#empresa">Empresa</a>
+                <li><a href="./sobre.html#juntar-se">Juntar-se</a>
+            </ul>
+        </div>
+        <div class="rodape">
+            <a class="bold" href="#"><strong>Redes</strong></a>
+            <ul>
+                <li><a href="https://twitter.com/">Twitter</a>
+                <li><a href="https://www.facebook.com/">Facebook</a>
+                <li><a href="https://www.instagram.com/">Instagram</a>
+            </ul>
+        </div>
+    </section>
+  </footer> 
+
+  <!-- JavaScript -->
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- JavaScript -->
+
+	</body>
+
+  <script>
+    
+    const enviarFormulario = document.getElementById('enviar').addEventListener('click', (e) => {
+      e.preventDefault()
+
+      const nome = document.getElementById('nome').value
+      const email = document.getElementById('email').value
+      const telefone = document.getElementById('telefone').value
+      const mensagem = document.getElementById('mensagem').value
+      const mensagemEnviar = document.getElementsByClassName('mensagem-enviar')
+
+      if (!nome || !email || !telefone || !mensagem) {
+        mensagemEnviar[0].classList.remove('mensagem-sucesso')
+        mensagemEnviar[0].classList.add('mensagem-erro')
+        return mensagemEnviar[0].textContent = 'Existem dados faltando. Verifique e tente novamente';
+      }
+      
+      if (nome && email && telefone && mensagem) {
+        mensagemEnviar[0].classList.remove('mensagem-erro')
+        mensagemEnviar[0].classList.add('mensagem-sucesso')
+
+        mensagemEnviar[0].textContent = 'Sucesso';
+      }
+
+      axios.post('http://localhost:5000/enviar-email', {
+        nome,
+        email,
+        telefone,
+        mensagem
+      })
+
+    })
+
+
+  </script>
+
+</html>
