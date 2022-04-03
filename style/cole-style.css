@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&display=swap");
 
 html {
-    overflow: scroll;
-    overflow-x: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Mont Serrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Mont Serrat", sans-serif;
 }
 
 a, ul, li{
@@ -26,9 +31,8 @@ a, ul, li{
   background-color: black;
   align-items: center;
   font-size: 20px;
-  position: fixed;
   flex-wrap: wrap;
-  
+  position: fixed;
   top: 0;
   z-index: 999;
 }
@@ -97,6 +101,7 @@ a, ul, li{
 .menu ul ul li a{
   display: block;
 }
+
 /*menu down*/
 
 /*Collections*/
@@ -155,6 +160,8 @@ a, ul, li{
 }
 
 /*Footer section*/
+/* Footer Section */
+
 .fundo{
   display: flex;
   flex-wrap: wrap;
@@ -162,7 +169,8 @@ a, ul, li{
   background-color: #ccc;
   justify-content: space-evenly;
 }
-.rodape{
+
+.rodape {
   margin-right: 5px;
 }
 
@@ -198,10 +206,6 @@ a, ul, li{
 }
 
 @media(max-width:550px) {
-  .fundo{
-    display: flex;
-    flex-direction: column;
-  }
 
   .rodape{
     margin: 0 20px;

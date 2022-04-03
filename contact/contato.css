@@ -1,18 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   overflow: scroll;
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: white;
   font-family: "Mont Serrat", sans-serif;
+}
+
+a, ul, li{
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  padding: 0;
 }
 
 /* Header Section */
@@ -170,7 +178,8 @@ body {
   color: black;
 }
 
-/*Footer section*/
+/* Footer Section */
+
 .fundo{
   display: flex;
   flex-wrap: wrap;
@@ -179,25 +188,12 @@ body {
   justify-content: space-evenly;
 }
 
-.bold {
-  text-decoration: none;
-  color: black;
-}
-
-.rodape ul, .rodape p {
-  padding-top: 1.5em;
+.rodape {
+  margin-right: 5px;
 }
 
 .rodape ul li{
-  list-style: none;
-  color: black;
   padding: 5px;
-}
-
-.rodape ul li a {
-  text-decoration: none;
-  margin-top: 20px;
-  color: black;
 }
 
 .rodape ul li a:hover{
@@ -211,9 +207,6 @@ body {
 
 #font{
   font-size: 30px;
-  text-decoration: none;
-  color: black;
-  padding-bottom: 20px;
 }
 
 .bold{
@@ -231,15 +224,12 @@ body {
 }
 
 @media(max-width:550px) {
-  .fundo{
-    display: flex;
-    flex-direction: column;
-  }
 
   .rodape{
     margin: 0 20px;
   }
 }
+
 
 /* formulario */
 .mensagem-enviar {

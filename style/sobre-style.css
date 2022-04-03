@@ -4,6 +4,10 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
 
 body {
   margin: 0;
@@ -12,15 +16,11 @@ body {
   font-family: "Mont Serrat", sans-serif;
 }
 
-h1{
- font-size: 40px;
-}
-
 a, ul, li{
   text-decoration: none;
   list-style-type: none;
-  padding: 0;
   color: black;
+  padding: 0;
 }
 
 /* Header Section */
@@ -229,13 +229,18 @@ a, ul, li{
  color: white;
 }
 
-/*Footer*/
+/* Footer Section */
+
 .fundo{
   display: flex;
   flex-wrap: wrap;
   padding: 40px 50px;
   background-color: #ccc;
   justify-content: space-evenly;
+}
+
+.rodape {
+  margin-right: 5px;
 }
 
 .rodape ul li{
@@ -270,10 +275,6 @@ a, ul, li{
 }
 
 @media(max-width:550px) {
-  .fundo{
-    display: flex;
-    flex-direction: column;
-  }
 
   .rodape{
     margin: 0 20px;
