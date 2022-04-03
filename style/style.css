@@ -303,10 +303,17 @@ a, ul, li{
 }
 
 @media (max-width: 970px){
+
+  .container h1{
+    padding: 0;
+    margin: 0;
+  }
+
   .img-content{
     overflow-x: scroll;
     flex-wrap: initial;
   }
+
 }
 
 /* Footer Section */
