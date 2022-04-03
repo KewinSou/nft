@@ -16,6 +16,10 @@ body {
   font-family: "Mont Serrat", sans-serif;
 }
 
+h1{
+  font-size: 40px;
+}
+
 a, ul, li{
   text-decoration: none;
   list-style-type: none;
