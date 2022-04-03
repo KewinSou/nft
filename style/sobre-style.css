@@ -12,35 +12,36 @@ body {
   font-family: "Mont Serrat", sans-serif;
 }
 
+a, ul, li{
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  color: black;
+}
+
 /* Header Section */
-.navbar {
-  background-color: black;
-  position: fixed;
-  height: 75px;
-  width: 100%;
-  top: 0;
+.navbar{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  background-color: black;
   align-items: center;
-  padding: 0.2em;
+  font-size: 20px;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
   z-index: 999;
 }
 
-.logo a {
-  margin-left: 2em;
-  font-size: 2em;
+#ico{
+  font-size: 30px;
   text-decoration: none;
-  color: #fff;
+  color: white;
+  padding-left: 25px;
 }
 
-.logo a span {
+#ico span {
   color: green;
-}
-
-.menu {
-  width: 26%;
-  float: right;
 }
 
 .menu ul{
@@ -201,49 +202,51 @@ body {
 
 /*Footer*/
 .fundo{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 50px;
   background-color: #ccc;
-  width: 100%;
-  height: 280px;
-  position: relative;
-}
-
-.rodape{
-  display: inline-grid;
-  margin: 0 70px;
-}
-
-.bold{
-  font-size: 25px;
-}
-
-#font{
-  font-size: 35px;
-  display: inline-block;
-}
-
-#font span{
-  color: green;
-}
-
-.rodape a{
-  color: black;
-  text-decoration: none;
-  padding: 2px;
-  margin-top: 20px;
-  list-style-type: none;
-}
-
-.rodape a:hover{
-  color: green;
-  border-bottom:2px solid green ;
-}
-
-.rodape ul{
-  padding: 0;
-  margin: 0;
+  justify-content: space-evenly;
 }
 
 .rodape ul li{
-  list-style-type: none;
   padding: 5px;
+}
+
+.rodape ul li a:hover{
+  color:green;
+  border-bottom: 2px solid green;
+}
+
+.rodape a span{
+  color: green;
+}
+
+#font{
+  font-size: 30px;
+}
+
+.bold{
+  font-size: 30px;
+}
+@media(max-width:700px){
+  .fundo{
+    flex-wrap: initial;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rodape{
+    margin-left: 100px;
+  }
+}
+
+@media(max-width:550px) {
+  .fundo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rodape{
+    margin: 0 20px;
+  }
 }
