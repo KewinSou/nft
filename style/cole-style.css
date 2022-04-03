@@ -106,7 +106,7 @@ a, ul, li{
 
 /*Collections*/
 .title h1{
-  margin-left: 100px;
+  margin-left: 180px;
   font-size: 40px;
   margin-bottom: 0;
 }
@@ -146,6 +146,10 @@ a, ul, li{
 @media(max-width:1025px){
   .title h1{
     margin-left: 0;
+  }
+
+  .espaco{
+    margin-top: 180px;
   }
 
   .layout ul{
