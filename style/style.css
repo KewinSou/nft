@@ -4,6 +4,10 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
 
 body {
   margin: 0;
@@ -97,6 +101,7 @@ a, ul, li{
 .menu ul ul li a{
   display: block;
 }
+
 /*menu down*/
 
 /* Hero Section */
@@ -189,12 +194,39 @@ a, ul, li{
 }
 
 @media (max-width: 900px){
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: .2em;
+  }
+
+  .menu li{
+    display: flex;
+    flex-direction: row;
+  }
+
   .inicio{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 8em auto;
+    width: 80%;
   }
-  .hero-h1{
-    display: none;
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero-respo{
@@ -202,15 +234,32 @@ a, ul, li{
     flex-wrap: wrap;
     margin-bottom: 25px;
   }
+
+  .hero-btn {
+    margin: 0 auto;
+  }
+
+  .hero-p {
+    margin-left: .7em;
+  }
+
+  .container h1 {
+    margin-left: 1.6em;
+  }
+
+  .fundo {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 /* News/Collections Section */
-.conteiner h1{
+.container h1{
   padding-left:100px;
   font-size: 45px;
 }
 
-.flex{
+.img-content{
   border: 3px solid black;
   display:flex;
   max-width: 1100px;
@@ -248,20 +297,20 @@ a, ul, li{
 }
 
 @media(max-width:1190px){
-  .conteiner h1{
+  .container h1{
     padding: 0;
   }
 }
 
 @media (max-width: 970px){
-  .flex{
+  .img-content{
     overflow-x: scroll;
     flex-wrap: initial;
   }
 }
 
 @media (max-width: 550px){
-  .conteiner{
+  .container{
     display:flex;
     flex-wrap: wrap;
   }
@@ -270,7 +319,7 @@ a, ul, li{
     margin-right: 10px;
   }
 
-  .flex{
+  .img-content{
     flex-wrap: wrap;
     max-width: 300px;
     overflow: initial;
@@ -323,10 +372,6 @@ a, ul, li{
 }
 
 @media(max-width:550px) {
-  .fundo{
-    display: flex;
-    flex-direction: column;
-  }
 
   .rodape{
     margin: 0 20px;
