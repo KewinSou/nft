@@ -36,12 +36,17 @@ a, ul, li{
 #ico{
   font-size: 30px;
   text-decoration: none;
+  font-weight: normal;
   color: white;
-  padding-left: 25px;
+  padding-left: 2em;
 }
 
 #ico span {
   color: green;
+}
+
+.menu {
+  padding-right: 2em;
 }
 
 .menu ul{
@@ -219,6 +224,7 @@ a, ul, li{
   display: grid;
   border: 3px solid black;
   margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 .bloco1:hover{

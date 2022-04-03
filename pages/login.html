@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collections</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link rel="shortcut icon" href="../imagem/icone.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a id="ico" href="../index.html">
+                <span>J</span>TPAG<span>E</span>
+            </a>
+            <div class="menu">
+                <ul>
+                    <li id="menu-colecoes">
+                        <a href="#">Coleções</a>
+                        <ul>
+                            <li><a href="../collectons">Monkeys</a>
+                            <li><a href="../collectons.html#invisible">Invisible</a>
+                            <li><a href="../collectons.html#punks">Punks</a>
+                            <li><a href="../collectons.html">Ver todas</a>
+                        </ul>
+                    <li>
+                        <a href="../contact/contato.html">Contato</a>
+                    <li>
+                        <a href="../sobre.html">Sobre</a>
+                        <ul>
+                            <li><a href="../sobre.html#nfts">NFTs</a>
+                            <li><a href="../sobre.html#artistas">Artistas</a>
+                            <li><a href="../sobre.html#empresa">Empresa</a>
+                            <li><a href="../sobre.html#juntar-se">Juntar-se</a>
+                        </ul>
+                    <li>
+                        <a href="login.html">Entrar</a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Login section-->
+    <section>
+        <article class="centro">
+            <fieldset>
+                <form action="/action_page.php"></form>
+                <h2>Entrar</h2>
+                <label for="email">E-mail:</label><br><input type="email" name="e-mail" id="email" placeholder="Seu e-mail" autocomplete="email">
+                <label for="senha">Senha:</label><br><input type="password" name="senha" id="senha" placeholder="Sua senha" autocomplete="current-password">
+                <p class="mensagem-enviar"></p>
+                <button id="enviar">Entrar</button>
+            </fieldset>
+        </article>
+    </section>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+
+const enviarFormulario = document.getElementById('enviar').addEventListener('click', (e) => {
+      e.preventDefault()
+
+      const email = document.getElementById('email').value
+      const password = document.getElementById('senha').value
+      const mensagemEnviar = document.getElementsByClassName('mensagem-enviar')
+
+      if (!email || !password) {
+        mensagemEnviar[0].classList.remove('mensagem-sucesso')
+        mensagemEnviar[0].classList.add('mensagem-erro')
+        return mensagemEnviar[0].textContent = 'Existem dados faltando. Verifique e tente novamente';
+      }
+      
+      if (email && password) {
+        mensagemEnviar[0].classList.remove('mensagem-erro')
+        mensagemEnviar[0].classList.add('mensagem-sucesso')
+        mensagemEnviar[0].textContent = 'Sucesso';
+      }
+
+      axios.post('http://localhost:5000/login', {
+        password,
+        email
+      }) 
+      .then(data => console.log(data.json()))
+
+    })
+
+</script>
+
+</html>
