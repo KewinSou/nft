@@ -158,6 +158,9 @@ a, ul, li{
   background-color: #ccc;
   justify-content: space-evenly;
 }
+.rodape{
+  margin-right: 5px;
+}
 
 .rodape ul li{
   padding: 5px;
