@@ -136,7 +136,7 @@ a, ul, li{
 
 .layout ul li p{
  display: flex;
- justify-content: space-betwee;
+ justify-content: space-between;
 }
 
 @media(max-width:1025px){
