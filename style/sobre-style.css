@@ -229,7 +229,7 @@ a, ul, li{
 .bold{
   font-size: 30px;
 }
-@media(max-width:700px){
+@media(max-width:800px){
   .fundo{
     flex-wrap: initial;
     display: grid;
