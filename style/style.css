@@ -214,34 +214,6 @@ a, ul, li{
   justify-content: space-between;
 }
 
-.bloco{
-  background-color: #e9e9e9de;
-  display: flex;
-  flex-direction: column;
-  border: 3px solid black;
-  padding-bottom: pxpx;
-  margin-bottom: 10px;
-  flex: 0 100px;
-}
-
-.bloco:hover{
-  transform: scale(1.075);
-  transition: 0.3s ease-in;
-}
-
-.bloco p{
-  display: flex;
-  justify-content: space-between;
-}
-
-.bloco a{
-  color: #000000;
-}
-
-.bloco a:hover{
-  color: rgb(0, 167, 28);
-}
-
 .bloco1{
   background-color: #e9e9e9de;
   display: grid;
