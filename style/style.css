@@ -43,7 +43,7 @@ a, ul, li{
   text-decoration: none;
   font-weight: normal;
   color: white;
-  padding-left: 2em;
+  margin-left: 10px;
 }
 
 #logo span {
@@ -151,9 +151,9 @@ a, ul, li{
   }
 
   #btn-mobile{
-
+    margin-right: 0;
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 0;
     font-size: 20px;
     border: none;
     background: none;
@@ -162,6 +162,7 @@ a, ul, li{
   }
 
   #botao{
+    margin-right: 0;
     margin: 3.5px 0 0 6px;
     color: white;
     width: 20px;
