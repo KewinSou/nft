@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="./imagem/icone.ico" type="image/x-icon">
 </head>
 <body>
-
     <!-- Header Section -->
     <header id="header">
         <a id="logo" href="#"><span>J</span>TPAG<span>E</span></a>
@@ -128,24 +127,5 @@
         </section>
     </footer>
 </body>
-<script>
-const btnMobile = document.getElementById('btn-mobile');
-    
-function toggleMenu() {    
-if(event.type === 'touchstart') event.preventDefault();
-const nav = document.getElementById('nav');
-nav.classList.toggle('active');
-const active = nav.classList.contains('active')
-event.currentTarget.setAttribute('aria-expanded', active);
-if (active) { event.currentTarget.setAttribute('aria-label', 'fechar menu');
-}
-else{
-    event.currentTarget.setAttribute('aria-label', 'abrir menu');
-}
-}
-    
-btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
-
-</script>
+<script src="menu.js"></script>
 </html>

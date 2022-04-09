@@ -167,35 +167,32 @@ a, ul, li{
     color: white;
     width: 20px;
     border-top: 2px solid;
- }
+  }
 
- #botao::after, #botao::before{
-  content: '';
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: currentColor;
-  margin-top: 5px;
-  transition: .3s;
-  position: relative;
+  #botao::after, #botao::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
  }
 
  #nav.active #botao{
    border-top-color: transparent ;
  }
  #nav.active #botao::after{
-  transform: rotate(-135deg);
-  top: -7px;
+    transform: rotate(-135deg);
+    top: -7px;
  }
 
  #nav.active #botao::before{
-
-  transform: rotate(135deg);
+    transform: rotate(135deg);
  }
 
 }
-
-
 /* nav mobile*/
 
 /* Hero Section */

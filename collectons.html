@@ -10,38 +10,35 @@
     </head>
     <body>
         <!--Header section-->
-        <header>
-            <main>
-                <div class="navbar">
-                    <a id="ico" href="./index.html">
-                        <span>J</span>TPAG<span>E</span>
-                    </a>
-                    <div class="menu">
+        <header id="header">
+            <a id="logo" href="./index.html"><span>J</span>TPAG<span>E</span></a>
+            <nav id="nav">
+                <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">menu 
+                    <span id="botao"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li>
+                        <a href="#">Coleções</a>
                         <ul>
-                            <li>
-                                <a href="./collectons.html">Coleções</a>
-                                <ul>
-                                    <li><a href="./collectons.html#monkeys">Monkeys</a>
-                                    <li><a href="./collectons.html#invisible">Invisible</a>
-                                    <li><a href="./collectons.html#punks">Punks</a>
-                                    <li><a href="./collectons.html">Ver todas</a>
-                                </ul>
-                            <li>
-                                <a href="./contact/contato.html">Contato</a>
-                            <li>
-                                <a href="./sobre.html">Sobre</a>
-                                <ul>
-                                    <li><a href="./sobre.html#nfts">NFTs</a>
-                                    <li><a href="./sobre.html#artistas">Artistas</a>
-                                    <li><a href="./sobre.html#empresa">Empresa</a>
-                                    <li><a href="./sobre.html#juntar-se">Juntar-se</a>
-                                </ul>
-                            <li>
-                                <a href="./pages/login.html">Entrar</a>
+                            <li><a href="./collectons.html#monkeys">Monkeys</a>
+                            <li><a href="./collectons.html#invisible">Invisible</a>
+                            <li><a href="./collectons.html#punks">Punks</a>
+                            <li><a href="./collectons.html">Ver todas</a>
                         </ul>
-                    </div>
-                </div>
-            </main>
+                    <li>
+                        <a href="./contact/contato.html">Contato</a>
+                    <li>
+                        <a href="./sobre.html">Sobre</a>
+                        <ul>
+                            <li><a href="./sobre.html#nfts">NFTs</a>
+                            <li><a href="./sobre.html#artistas">Artistas</a>
+                            <li><a href="./sobre.html#empresa">Empresa</a>
+                            <li><a href="./sobre.html#juntar-se">Juntar-se</a>
+                        </ul>
+                    <li>
+                        <a href="./pages/login.html">Entrar</a>
+                </ul>
+            </nav>
         </header>
         
         <!--monkeys sections-->
@@ -246,4 +243,5 @@
             </section>
         </footer>
     </body>
+    <script src="menu.js"></script>
 </html>
