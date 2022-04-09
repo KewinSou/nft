@@ -241,7 +241,7 @@ a, ul, li{
 
 /*Artistas*/
 .artistas{
-  background-color: #ccc;
+  background-color: rgba(199, 199, 199, 0.1);
   max-width: 90vw;
   margin: 0 auto 150px;
   border-radius: 3px;
@@ -298,8 +298,8 @@ a, ul, li{
 
 /*Juntar se a nos*/
 .caixa{
+  background-color: rgba(199, 199, 199, 0.1);
   max-width: 90vw;
-  background-color: #ccc;
   display: flex;
   padding: 20px;
   margin: 0 auto 100px;
