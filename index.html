@@ -9,35 +9,37 @@
     <link rel="shortcut icon" href="./imagem/icone.ico" type="image/x-icon">
 </head>
 <body>
+
     <!-- Header Section -->
-    <header>
-        <div class="navbar">
-            <a id="ico" href="#"><span>J</span>TPAG<span>E</span></a>
-            <div class="menu">
-                <ul>
-                    <li id="menu-colecoes">
-                        <a href="./collectons.html">Coleções</a>
-                        <ul>
-                            <li><a href="./collectons.html#monkeys">Monkeys</a>
-                            <li><a href="./collectons.html#invisible">Invisible</a>
-                            <li><a href="./collectons.html#punks">Punks</a>
-                            <li><a href="./collectons.html">Ver todas</a>
-                        </ul>
-                    <li>
-                        <a href="./contact/contato.html">Contato</a>
-                    <li>
-                        <a href="./sobre.html">Sobre</a>
-                        <ul>
-                            <li><a href="./sobre.html#nfts">NFTs</a>
-                            <li><a href="./sobre.html#artistas">Artistas</a>
-                            <li><a href="./sobre.html#empresa">Empresa</a>
-                            <li><a href="./sobre.html#juntar-se">Juntar-se</a>
-                        </ul>
-                    <li>
-                        <a href="./pages/login.html">Entrar</a>
-                </ul>
-            </div>
-        </div>
+    <header id="header">
+        <a id="logo" href="#"><span>J</span>TPAG<span>E</span></a>
+        <nav id="nav">
+            <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">menu 
+                <span id="botao"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li>
+                    <a href="./collectons.html">Coleções</a>
+                    <ul>
+                        <li><a href="./collectons.html#monkeys">Monkeys</a>
+                        <li><a href="./collectons.html#invisible">Invisible</a>
+                        <li><a href="./collectons.html#punks">Punks</a>
+                        <li><a href="./collectons.html">Ver todas</a>
+                    </ul>
+                <li>
+                    <a href="./contact/contato.html">Contato</a>
+                <li>
+                    <a href="./sobre.html">Sobre</a>
+                    <ul>
+                        <li><a href="./sobre.html#nfts">NFTs</a>
+                        <li><a href="./sobre.html#artistas">Artistas</a>
+                        <li><a href="./sobre.html#empresa">Empresa</a>
+                        <li><a href="./sobre.html#juntar-se">Juntar-se</a>
+                    </ul>
+                <li>
+                    <a href="./pages/login.html">Entrar</a>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -126,4 +128,24 @@
         </section>
     </footer>
 </body>
+<script>
+const btnMobile = document.getElementById('btn-mobile');
+    
+function toggleMenu() {    
+if(event.type === 'touchstart') event.preventDefault();
+const nav = document.getElementById('nav');
+nav.classList.toggle('active');
+const active = nav.classList.contains('active')
+event.currentTarget.setAttribute('aria-expanded', active);
+if (active) { event.currentTarget.setAttribute('aria-label', 'fechar menu');
+}
+else{
+    event.currentTarget.setAttribute('aria-label', 'abrir menu');
+}
+}
+    
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+
+</script>
 </html>
